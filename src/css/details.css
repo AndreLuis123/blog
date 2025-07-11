@@ -1,0 +1,166 @@
+@media all {
+    :root {
+        --black-opacity-05: #0000000D;
+        --black-opacity-06: #0000000F;
+        --black-opacity-10: #0000001A;
+        --black-opacity-60: #00000099;
+
+        --blue-100: #DBEAFE;
+        --blue-150: #E0F2FE;
+        --blue-800: #1E40AF;
+        --blue-600: #2563EB;
+        --blue-700: #1D4ED8;
+
+        --gray-050: #F3F4F6;
+        --gray-600: #4b5563;
+        --gray-750: #1F2937;
+        --gray-800: #374151;
+        --gray-900: #111827;
+
+        --green-100: #DCFCE7;
+        --green-800: #16A34A;
+
+        --yellow-100: #FEFCE8;
+        --yellow-800: #CA8A04;
+
+        --pink-100: #FCE7F3;
+        --pink-700: #BE185D;
+
+        --white: #FFFFFF;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: var(--gray-050);
+        color: var(--gray-800);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+
+    .c_body__details_container {
+        background-color: var(--white);
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 15px -3px var(--black-opacity-10), 0 4px 6px -2px var(--black-opacity-05);
+        padding: 2rem;
+        max-width: 800px;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        /* Para posicionar o contador de visualizações */
+    }
+
+    .c_body__details_container img {
+        width: 100%;
+        height: 300px;
+        /* Altura fixa para a imagem de detalhes */
+        object-fit: cover;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .c_body__details_container h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--gray-900);
+        margin-bottom: 1rem;
+    }
+
+    .c_body__details_container h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--gray-750);
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .c_body__details_container p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: var(--gray-600);
+        margin-bottom: 1rem;
+    }
+
+    /* Estilo para o contador de visualizações na página de detalhes */
+    .c_body__details_container .c_detail_container__views_counter {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: var(--black-opacity-60);
+        color: var(--white);
+        font-size: 0.85rem;
+        padding: 0.35rem 0.8rem;
+        border-radius: 5px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .c_body__details_container .c_detail_container__views_counter svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+    }
+
+    .c_body__details_container .c_detail_container__category_tag {
+        display: inline-block;
+        background-color: var(--blue-100);
+        color: var(--blue-800);
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 0.35rem 1rem;
+        border-radius: 9999px;
+        margin-bottom: 1rem;
+    }
+
+    /* Cores específicas para as tags de categoria na página de detalhes */
+    .c_detail_container__category_tag.tecnologia {
+        background-color: var(--blue-150);
+        color: var(--blue-600);
+    }
+
+    .c_detail_container__category_tag.moda {
+        background-color: var(--pink-100);
+        color: var(--pink-700);
+    }
+
+    .c_detail_container__category_tag.inovacao {
+        background-color: var(--green-100);
+        color: var(--green-800);
+    }
+
+    .c_detail_container__category_tag.agricultura {
+        background-color: var(--yellow-100);
+        color: var(--yellow-800);
+    }
+
+    .c_body__footer .c_footer__back_button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--blue-600);
+        color: var(--white);
+        text-decoration: none;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease-in-out, transform 0.2s;
+        font-weight: 600;
+        box-shadow: 0 4px 6px -1px var(--black-opacity-10), 0 2px 4px -1px var(--black-opacity-06);
+    }
+
+    .c_body__footer .c_footer__back_button:hover {
+        background-color: var(--blue-700);
+        transform: translateY(-2px);
+    }
+}

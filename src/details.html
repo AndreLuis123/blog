@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalhes do Card</title>
+        <link rel="stylesheet" href="./css/details.css">
+        <link rel="shortcut icon" href="./images/blog_favicon.png" type="image/x-icon">
+        <script type="module" src="./js/details_js/details.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="c_body__details_container">
+                <div class="c_detail_container__views_counter" data-id="detail_container_views_counter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M288 144a110.18 110.18 0 0 0 -110.18 110.18V256H40.09C16.27 256 0 272.27 0 296.09c0 23.82 16.27 40.09 40.09 40.09H177.82A110.18 110.18 0 0 0 288 446.27a110.18 110.18 0 0 0 110.18-110.18V336h137.73c23.82 0 40.09-16.27 40.09-40.09c0-23.82-16.27-40.09-40.09-40.09H405.82A110.18 110.18 0 0 0 288 144zM288 368a80 80 0 1 1 0-160 80 80 0 1 1 0 160z"/>
+                    </svg>
+
+                    <span id="id_detail_views_count" data-id="detail_views_count">0</span>
+                </div>
+
+                <img id="id_detail_image" data-id="detail_image" src="" alt="Imagem do Card">
+                
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <span id="id_detail_category" data-id="detail_category" class="c_detail_container__category_tag"></span>
+
+                    <span data-id="detail_date" class="c_detail_container__category_tag"></span>
+                </div>
+                
+                <h1 id="id_detail_title" data-id="detail_title"></h1>
+                
+                <p id="id_detail_description" data-id="detail_description"></p>
+                
+                <h2 data-id="detail_full_text_title">Conteúdo Completo:</h2>
+                
+                <p id="id_detail_full_text" data-id="detail_full_text"></p>
+            </div>
+        </main>
+
+        <footer class="c_body__footer">
+            <a href="../index.html" class="c_footer__back_button">
+                Voltar para a Página Principal
+            </a>
+        </footer>
+    </body>
+</html>

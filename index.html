@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria de Cards</title>
+        <link rel="shortcut icon" href="./src/images/blog_favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./src/css/index.css">
+        <script type="module" src="./src/js/index.js" defer></script>        
+    </head>
+    
+    <body class="c_body">
+        <div class="c_body__container">
+            <header class="c_container__header">
+                <div class="c_header__content">
+                    <img 
+                        src="./src/images/logo.png"
+                        alt="Logo da empresa"
+                        class="c_content__logo"
+                    />
+
+                    <nav class="c_content__filter_buttons">
+                        <button class="c_filter_buttons__filter_btn" data-category="todos" title="Clique para filtrar" aria-label="Clique para filtrar">
+                            Todas
+                        </button>
+
+                        <button class="c_filter_buttons__filter_btn" data-category="tecnologia" title="Clique para filtrar" aria-label="Clique para filtrar">
+                            Tecnologias
+                        </button>
+
+                        <button class="c_filter_buttons__filter_btn" data-category="moda" title="Clique para filtrar" aria-label="Clique para filtrar">
+                            Moda
+                        </button>
+
+                        <button class="c_filter_buttons__filter_btn" data-category="inovacao" title="Clique para filtrar" aria-label="Clique para filtrar">
+                            Inovação
+                        </button>
+
+                        <button class="c_filter_buttons__filter_btn" data-category="agricultura" title="Clique para filtrar" aria-label="Clique para filtrar">
+                            Agricultura
+                        </button>
+                    </nav>
+                </div>
+
+                <h1>
+                    Nossa galeria de conteúdo
+                </h1>
+
+                <p>
+                    Explore artigos e novidades em diversas categorias.
+                </p>
+            </header>
+
+            <section class="c_container__cards_container" id="id_cards_container" data-id="cards_container"></section>
+        </div>
+    </body>
+</html>
